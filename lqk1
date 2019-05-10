@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%@ page import="java.io.*,java.util.*" %>
+<%@ page import="javax.servlet.*,java.text.*" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head><title>图片ing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<font color="red",size="5">
+欢迎访问！！！<br/>
+<%int number=(int) (Math.random()*10);  
+out.println(number);
+%>                <%--int number=(int) (Math.random()*10);产生0-10的随机数 --%>>
+<%if (number>5){%>
+<%out.println("成功");%>
+<p>
+运气不错！！！
+</p>
+<p>
+今天的日期是： <%=(new java.util.Date()).toLocaleString() %>
+</p>
+<%}else {%>
+<%out.println("失败");%>
+<p>
+运气不好,重新来过！！！
+</p>
+<p>
+今天的日期是： <%=(new java.util.Date()).toLocaleString() %>
+  <%
+   Date dNow = new Date( );
+   SimpleDateFormat ft = 
+   new SimpleDateFormat ("yyyy-MM-dd HH:mm:ss:SS");
+   out.print( "<h2 align=\"center\">" + ft.format(dNow) + "</h2>");
+   %>                          <%--align=\"center\" 居中 --%>
+</p>
+<%} %>
+<img src="image/log.jpg">    <%--插入图片 --%>
+<img alt="" style="width:530px;hight:295px;"src="image/lll.jpg">
+<img alt="" style="width:530px;hight:295px;"src="image/qqq.jpeg">
+<img alt="" style="width:530px;hight:295px;"src="image/kkk.jpg">
+<label><div style="color:pink;width: 535px;height: 295px;background:url(image/log.jpg) no-repeat left top;">这个是文字内容。</div>
+</label>                     <%--插入图片并在图片上插入字符 --%>
+<style>
+.class{color:pink;width: 530px;height: 295px;background: url("image/log.jpg") no-repeat;}
+</style>                     <%--插入图片并在图片上插入字符  --%>
+<div class="class">
+<p>
+你的文字内容:老王是low比！！！
+</p>
+
+</div>
+</font>
+</body>
+</html>
