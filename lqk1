@@ -40,7 +40,7 @@ out.println(number);
    %>                          <%--align=\"center\" 居中 --%>
 </p>
 <%} %>
-<img src="image/log.jpg">    <%--插入图片 --%>
+<img src="log.jpg">    <%--插入图片 --%>
 <img alt="" style="width:530px;hight:295px;"src="image/lll.jpg">
 <img alt="" style="width:530px;hight:295px;"src="image/qqq.jpeg">
 <img alt="" style="width:530px;hight:295px;"src="image/kkk.jpg">
